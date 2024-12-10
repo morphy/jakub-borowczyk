@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pl">
+  {% include head.liquid %}
+
+  <body>
+    <div
+      id="wrapper"
+      class="flex min-h-screen flex-col items-center justify-center bg-black px-3 py-10 transition-colors duration-[2000ms] sm:p-16"
+    >
+      {% include header.liquid %}
+      {% include main.liquid %}
+      {% include footer.liquid %}
+    </div>
+
+    <video
+      src="{{ "/assets/video/video.mp4" | relative_url }}"
+      id="video"
+      class="fixed left-0 top-0 -z-50 size-full transform object-cover filter duration-500"
+      muted
+      loop
+      autoplay
+    ></video>
+  </body>
+</html>

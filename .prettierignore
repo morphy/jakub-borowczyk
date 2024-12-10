@@ -1,0 +1,12 @@
+node_modules/
+
+package-lock.json
+Gemfile.lock
+
+**/*.jpg
+**/*.webp
+**/*.avif
+
+assets/css/style.css
+
+.idea/

@@ -1,0 +1,19 @@
+<ul class="flex items-center gap-8 pt-20 sm:gap-10">
+  {% for social in site.socials %}
+    <li>
+      <a
+        href="{{ social.href }}"
+        class="flex size-16 items-center justify-center rounded-full border border-solid border-white duration-200 hover:bg-white hover:bg-opacity-50 sm:size-20"
+      >
+        {% case social.icon %}
+          {% when 'facebook' %}
+            {% include icons/facebook.svg %}
+          {% when 'youtube' %}
+            {% include icons/youtube.svg %}
+          {% when 'instagram' %}
+            {% include icons/instagram.svg %}
+        {% endcase %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

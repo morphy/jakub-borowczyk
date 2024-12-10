@@ -1,0 +1,13 @@
+{
+  "trailingComma": "none",
+  "plugins": ["@shopify/prettier-plugin-liquid", "prettier-plugin-tailwindcss"],
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": ["*.svg", "*.xml"],
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
+}

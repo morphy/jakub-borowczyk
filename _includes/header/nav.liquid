@@ -1,0 +1,26 @@
+<ul
+  class="ml-px flex flex-col rounded-lg border border-solid border-white text-center font-thin uppercase tracking-widest text-white lg:flex-row"
+>
+  {% assign articles = site.articles | sort: 'order' %}
+
+  {% for article in articles %}
+    {% if article.title == 'Media' or article.title == 'Kalendarz' %}
+      {% continue %}
+    {% endif %}
+
+    {% assign classes = '2xl:w-48 xl:w-40 w-32' %}
+
+    {% if forloop.last == false %}
+      {% assign classes = classes | append: ' lg:border-r lg:border-b-0 border-b border-solid border-white' %}
+    {% endif %}
+
+    <li class="{{ classes }}">
+      <button
+        data-article="{{ article.slug }}"
+        class="block w-full py-5 duration-200 hover:bg-white hover:bg-opacity-50"
+      >
+        {{ article.title }}
+      </button>
+    </li>
+  {% endfor %}
+</ul>

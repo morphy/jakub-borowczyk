@@ -1,0 +1,40 @@
+title: Jakub Borowczyk
+description: >-
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+socials:
+  - icon: facebook
+    href: https://www.facebook.com/borowczykjakub
+
+  - icon: youtube
+    href: https://www.youtube.com/@jakubborowczyk3862
+
+  - icon: instagram
+    href: https://www.instagram.com/borowczyk.jakub/
+
+baseurl: ""
+url: ""
+
+host: 0.0.0.0
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-minifier
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
+collections:
+  - articles
+
+exclude:
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - assets/scss/
+  - README.md

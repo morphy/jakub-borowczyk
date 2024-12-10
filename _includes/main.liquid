@@ -1,0 +1,27 @@
+<main
+  id="main"
+  class="invisible h-0 max-w-[1000px] overflow-hidden rounded-lg bg-black bg-opacity-50 opacity-0 duration-500"
+>
+  <div class="relative p-8 pt-20 md:p-12">
+    <button
+      id="close"
+      class="absolute right-5 top-5 flex size-14 items-center justify-center rounded-full duration-200 *:size-6 *:fill-white hover:bg-white hover:bg-opacity-10"
+    >
+      {% include icons/close.svg %}
+    </button>
+
+    {% assign articles = site.articles | sort: 'order' %}
+
+    {% for article in articles %}
+      <article id="{{ article.slug }}">
+        <h2 class="mb-10 inline-block border-b-2 border-solid border-white pb-4 text-2xl font-semibold uppercase tracking-[0.4rem] text-white sm:text-3xl">
+          {{ article.title }}
+        </h2>
+
+        <div class="content">
+          {{ article.content | markdownify }}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</main>

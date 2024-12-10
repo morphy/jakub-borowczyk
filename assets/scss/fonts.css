@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "DEC Terminal Modern";
+  src:
+    local("Open Sans"),
+    url("../fonts/decterm.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sono";
+  src:
+    local("Open Sans"),
+    url("../fonts/sono.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
