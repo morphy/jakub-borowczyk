@@ -4,10 +4,6 @@
   {% assign articles = site.articles | sort: 'order' %}
 
   {% for article in articles %}
-    {% if article.title == 'Media' or article.title == 'Kalendarz' %}
-      {% continue %}
-    {% endif %}
-
     {% assign classes = '2xl:w-48 xl:w-40 w-32' %}
 
     {% if forloop.last == false %}
