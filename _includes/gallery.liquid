@@ -24,7 +24,7 @@
 
 <div class="{{ classes }}" data-gallery-id="{{ id }}">
   {% for file in files %}
-    <a href="{{ file.path }}">
+    <a href="{{ file.path | relative_url }}">
       {% picture default {{ file.path }} %}
     </a>
   {% endfor %}
