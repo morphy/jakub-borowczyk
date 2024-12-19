@@ -1,5 +1,7 @@
 window.addEventListener("load", () => {
   if (document.readyState === "complete") {
+    const emailElement = document.getElementById("email");
+
     const wrapper = document.getElementById("wrapper");
     const video = document.getElementById("video");
 
@@ -12,6 +14,7 @@ window.addEventListener("load", () => {
 
     const buttons = document.querySelectorAll("button[data-article]");
     const articles = document.getElementsByTagName("article");
+    const galleries = document.getElementsByClassName("lightgallery");
 
     const hideArticle = () => {
       /* Hide main */
@@ -31,6 +34,18 @@ window.addEventListener("load", () => {
         video.classList.remove("scale-110", "blur-lg");
       }, 500);
     };
+
+    /* Fill the email element */
+
+    const email =
+      "aNmIFCrEdTWRIYuFaU3CJK6OeFXFNN6IdCGE9TmRLYmFJUvCcKmO9F3FYN3IpC5EaT0RBYnFbUWCFKpObFCF5NjIbC2E0T=";
+
+    emailElement.innerText = atob(
+      email
+        .split("")
+        .filter((char, index) => index % 2 === 0)
+        .join("")
+    );
 
     /* Fade in header and footer */
 
@@ -95,6 +110,16 @@ window.addEventListener("load", () => {
 
         wrapper.addEventListener("click", hideArticle, { once: true });
         closeButton.addEventListener("click", hideArticle, { once: true });
+      });
+    });
+
+    /* Gallery */
+
+    Array.from(galleries).forEach((gallery) => {
+      lightGallery(gallery, {
+        plugins: [lgZoom, lgThumbnail, lgHash],
+        galleryId: gallery.dataset.galleryId,
+        licenseKey: "0000-0000-000-0001"
       });
     });
   }
