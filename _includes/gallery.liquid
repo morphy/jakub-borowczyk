@@ -1,0 +1,31 @@
+{% assign directory = include.directory %}
+{% assign id = include.id %}
+
+{% assign files = site.static_files | where_exp: 'file', 'file.path contains directory' %}
+
+{% assign columns = include.columns | default: 5 %}
+
+{% assign classes = 'lightgallery grid gap-4' %}
+
+{% case columns %}
+  {% when 1 %}
+    {% assign classes = classes | append: ' grid-cols-1' -%}
+  {%- when 2 %}
+    {% assign classes = classes | append: ' grid-cols-2' %}
+  {%- when 3 %}
+    {% assign classes = classes | append: ' grid-cols-3' %}
+  {%- when 4 %}
+    {% assign classes = classes | append: ' sm:grid-cols-4 grid-cols-3' %}
+  {%- when 5 %}
+    {% assign classes = classes | append: ' md:grid-cols-5 sm:grid-cols-4 grid-cols-3' %}
+  {%- when 6 %}
+    {% assign classes = classes | append: ' lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 grid-cols-3' %}
+{% endcase %}
+
+<div class="{{ classes }}" data-gallery-id="{{ id }}">
+  {% for file in files %}
+    <a href="{{ file.path }}">
+      {% picture default {{ file.path }} %}
+    </a>
+  {% endfor %}
+</div>
