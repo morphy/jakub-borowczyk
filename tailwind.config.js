@@ -6,6 +6,7 @@ module.exports = {
     "./_pages/**/*.{md,markdown,liquid,html,svg}",
     "./_posts/**/*.{md,markdown,liquid,html,svg}",
     "./_articles/**/*.{md,markdown,liquid,html,svg}",
+    "./_data/picture.yml",
     "./assets/js/*.*"
   ],
   safelist: ["bg-opacity-40"]
