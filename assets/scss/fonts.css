@@ -1,17 +1,13 @@
 @font-face {
-  font-family: "DEC Terminal Modern";
+  font-family: "Source Sans 3";
   src:
     local("Open Sans"),
-    url("../fonts/decterm.ttf") format("truetype");
+    url("../fonts/source-sans-3.ttf") format("truetype");
   font-style: normal;
   font-display: swap;
+  font-weight: normal;
 }
 
-@font-face {
-  font-family: "Sono";
-  src:
-    local("Open Sans"),
-    url("../fonts/sono.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
+* {
+  font-family: "Source Sans 3", sans-serif;
 }
