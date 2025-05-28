@@ -37,15 +37,15 @@ recitale solowe m.in. w 2016 roku w ramach festiwalu „Ostatni dzień lata” w
 Gdyni czy też w 2017 roku recital zatytułowany „Zakochany Szekspir” w ramach
 Światowego Dnia Poezji w Gdańsku.
 
-Jakub Borowczyk zajmuje się śpiewam na bardzo wielu polach – W czerwcu 2017 roku
+Jakub Borowczyk zajmuje się śpiewem na bardzo wielu polach – W czerwcu 2017 roku
 nagrał partię solową do spektaklu „Zakochany Szekspir” w reżyserii Pawła
 Aignera. Sztuka była wystawiana w Teatrze Szekspirowskim w Gdańsku, a samego
 nagrania dokonano w Studiu Radia Gdańsk. Od tego samego roku nawiązał współpracę
 z Operą Bałtycką w Gdańsku w ramach projektu „Mor(ż)e Opera” – finał tego
 edukacyjnego przedsięwzięcia miał miejsce na deskach opery w 2018 roku. W 2019
-zaebiutował na deskach Warszawskiej Opery Kameralnej tytułową rolą w operze
+zadebiutował na deskach Warszawskiej Opery Kameralnej tytułową rolą w operze
 „Apollo i Hiacynt” W.A. Mozarta. Jest śpiewakiem bardzo często wykonującym
-muzykę współczesną m.in. w listopadzie 2019 w Minoritenkirche w Wiedniu wykonał
+muzykę współczesną, m.in. w listopadzie 2019 w Minoritenkirche w Wiedniu wykonał
 partię solową w dziele „Goetia.72. In umbra lucis (2019)” Lery Auerbach na
 zaproszenie zespołu Cracow Singers. Ponownie wystąpili w 2020 (Galeria Sztuki
 Polskiej XIX wieku w Sukiennicach w Krakowie) z tym samym tytułem. Od marca 2020
@@ -55,11 +55,11 @@ młodzieńca przemawiającego z mocą, zyskała uznanie krytyków. W październi
 roku wystąpił jako Giasone w operze Antonio Bioniego „Issipile”. Całość
 realizowana była przez stowarzyszenie Ars Augusta oraz Operę na Zamku w
 Szczecinie. Była to prapremiera światowa, dzieło odkryte na nowo. W maju 2023 w
-Filharmonii Narodowej w Warszawie wykonał partię altową w "Magnificat" J.S.
+Filharmonii Narodowej w Warszawie wykonał partię altową w „Magnificat” J.S.
 Bacha pod batutą Bartosza Michałowskiego. Współpracuje z Operą Krakowską przy
 produkcji operetki K. Szymanowskiego „Loteria na mężów, czyli narzeczony nr 69”.
 Od listopada 2023 wykonuje partię kontratenorową we współczesnym balecie A.
-Maskatsa "Niebezpieczne związki" w Operze Nova w Bydgoszczy.
+Maskatsa „Niebezpieczne związki” w Operze Nova w Bydgoszczy.
 
 <div class="flex justify-center items-end gap-10">
   {% picture content-image /assets/img/bio/bio-4.jpg --img alt="" --img loading="lazy" --img class="hidden w-48 min-w-0 md:block" %}
@@ -73,7 +73,7 @@ pod batutą Agnieszki Franków-Żelazny w Filharmonii Sudeckiej w Wałbrzychu.
 W listopadzie 2024 roku wystąpił w Operze Krakowskiej w premierze światowej
 opery „Bona Sforza” Zygmunta Krauzego.
 
-Wykonuje również liczne pieśni – najchętniej te zainspirowane melodiami
+Wykonuje również liczne pieśni — najchętniej te zainspirowane melodiami
 ludowymi: angielskimi, szkockimi czy irlandzkimi. Nie stroni od utworów muzyki
 współczesnej – P. Glassa, B. Brittena, A. Pärta i innych. Przykładowo na
 zaproszenie Aleksandry Żebrowskiej wykonał utwór Pawła Szymańskiego „Villanelle”
