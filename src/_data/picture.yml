@@ -1,0 +1,13 @@
+presets:
+  gallery-thumb:
+    formats: [avif, webp, original]
+    crop: "1:1"
+    base_width: 250
+    pixel_ratios: [1, 1.5, 2]
+    fallback_width: 250
+
+  content-image:
+    formats: [original]
+    base_width: 400
+    pixel_ratios: [1, 1.5, 2]
+    fallback_width: 400
