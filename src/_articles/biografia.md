@@ -14,8 +14,8 @@ Muzykologia Uniwersytetu Adama Mickiewicza w Poznaniu. W latach 2010-2013
 członek zespołu kameralnego muzyki dawnej „Anonymus”.
 
 <div class="flex justify-center gap-10">
-    <img src="/assets/img/bio/kuba-borowczyk-10.jpg" alt="" class="w-80 md:w-60">
-    <img src="/assets/img/bio/kuba-borowczyk-8.jpg" alt="" class="hidden w-60 md:block">
+    <img src="/assets/img/bio/bio-1.jpg" alt="" class="w-96 md:w-60">
+    <img src="/assets/img/bio/bio-6.jpg" alt="" class="hidden w-60 md:block">
 </div>
 
 Uczestniczył w kursach mistrzowskich, prowadzonych przez śpiewaków i pedagogów
@@ -30,9 +30,9 @@ zaśpiewał partię Ducha w operze „Dydona i Eneasz” pod kierownictwem Przem
 Stanisławskiego.
 
 <div class="flex justify-center items-end gap-10">
-    <img src="/assets/img/bio/kuba-borowczyk-16.jpg" alt="" class="hidden w-48 min-w-0 md:block">
-    <img src="/assets/img/bio/kuba-borowczyk-12.jpg" alt="" class="hidden w-56 min-w-0 md:block">
-    <img src="/assets/img/bio/kuba-borowczyk-14.jpg" alt="" class="w-80 min-w-0 md:w-64">
+  {% picture content-image /assets/img/bio/bio-4.jpg --img alt="" --img loading="lazy" --img class="hidden w-48 min-w-0 md:block" %}
+  {% picture content-image /assets/img/bio/bio-2.jpg --img alt="" --img loading="lazy" --img class="hidden w-56 min-w-0 md:block" %}
+  {% picture content-image /assets/img/bio/bio-3.jpg --img alt="" --img loading="lazy" --img class="w-96 min-w-0 md:w-64" %}
 </div>
 
 Jakub Borowczyk wykonuje także liczne recitale solowe, chociażby w 2016 roku w
@@ -45,7 +45,7 @@ Gdańsku, a samego nagrania dokonano w Studiu Radia Gdańsk. Od tego samego roku
 współpracuje również z Operą Bałtycką w Gdańsku w ramach projektu „Mor(ż)e
 Opera”, którego finał miał miejsce na deskach opery w 2018 roku.
 
-<img src="/assets/img/bio/kuba-borowczyk-6.jpg" alt="" class="w-96">
+{% picture content-image /assets/img/bio/bio-5.jpg --img alt="" --img loading="lazy" --img class="w-96 mx-auto" %}
 
 Kontratenor jest też żywo zainteresowany wykonawstwem muzyki
 oratoryjno-kantatowej. Oprócz licznych koncertów, w 2018 roku brał udział w
