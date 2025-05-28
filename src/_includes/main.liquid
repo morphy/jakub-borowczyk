@@ -1,6 +1,6 @@
 <main
   id="main"
-  class="invisible h-0 max-w-[1000px] overflow-hidden rounded-lg bg-black bg-opacity-50 opacity-0 duration-500"
+  class="invisible h-0 max-w-[1000px] mx-auto overflow-hidden rounded-lg bg-black bg-opacity-50 opacity-0 duration-500"
 >
   <div class="relative p-8 pt-20 md:p-12">
     <button
@@ -18,9 +18,13 @@
           {{ article.title }}
         </h2>
 
-        <div class="content">
-          {{ article.content | markdownify }}
-        </div>
+        {% if article.disableContentClass %}
+          {{ article.content }}
+        {% else %}
+          <div class="content">
+            {{ article.content }}
+          </div>
+        {% endif %}
       </article>
     {% endfor %}
   </div>

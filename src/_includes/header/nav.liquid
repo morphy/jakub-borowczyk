@@ -6,9 +6,9 @@
   {% for article in articles %}
     {% assign classes = '2xl:w-48 xl:w-40 w-32' %}
 
-    {% if forloop.last == false %}
+    {% unless forloop.last %}
       {% assign classes = classes | append: ' lg:border-r lg:border-b-0 border-b border-solid border-white' %}
-    {% endif %}
+    {% endunless %}
 
     <li class="{{ classes }}">
       <button
