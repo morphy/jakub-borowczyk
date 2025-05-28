@@ -1,0 +1,45 @@
+---
+title: Repertuar
+order: 2
+disableContentClass: true
+---
+<ul class="flex flex-row rounded-lg border border-solid border-white text-center font-thin uppercase tracking-widest text-white sm:flex-row">
+  {% for work in site.works %}
+    {% assign classes = 'grow' %}
+
+    {% unless forloop.last %}
+      {% assign classes = classes | append: ' border-r border-solid border-white' %}
+    {% endunless %}
+
+    {% assign buttonClasses = 'block w-full py-2 duration-200 hover:bg-white hover:bg-opacity-50' %}
+
+    {% if forloop.first %}
+      {% assign buttonClasses = buttonClasses | append: ' bg-white bg-opacity-50' %}
+    {% endif %}
+
+    <li class="{{ classes }}">
+      <button
+        data-work="{{ work.slug }}"
+        class="{{ buttonClasses }}"
+      >
+        {{ work.title }}
+      </button>
+    </li>
+  {% endfor %}
+</ul>
+
+{% for work in site.works %}
+  {% assign classes = 'content mt-8 duration-200' %}
+
+  {% if forloop.first %}
+    {% assign classes = classes | append: ' opacity-1 block' %}
+  {% else %}
+    {% assign classes = classes | append: ' opacity-0 hidden' %}
+  {% endif %}
+
+  <section class="{{ classes }}" id="{{ work.slug }}">
+    <h3>{{ work.title }}</h3>
+
+    {{ work.content | markdownify }}
+  </section>
+{% endfor %}
