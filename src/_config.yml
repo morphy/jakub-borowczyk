@@ -16,6 +16,7 @@ jekyll-minifier:
 
 collections:
   - articles
+  - works
 
 livereload_ignore:
   - .idea/*

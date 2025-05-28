@@ -1,23 +1,25 @@
 {
-  "name": "jakub-borowczyk",
-  "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently --kill-others --names \"Jekyll,Tailwindcss\" \"cross-env JEKYLL_ENV=development bundle exec jekyll serve --livereload\" \"tailwind -i assets/scss/index.scss -o assets/css/style.css --watch\"",
-    "clean": "shx rm -rf .jekyll-cache _site .jekyll-metadata",
-    "clean:all": "shx rm -rf .jekyll-cache _site .jekyll-metadata node_modules",
-    "format": "prettier --check --ignore-unknown */**",
-    "format:write": "prettier --write --ignore-unknown */**",
-    "build": "tailwind -i assets/scss/index.scss -o assets/css/style.css && cross-env JEKYLL_ENV=development bundle exec jekyll build",
-    "build:production": "tailwind -i assets/scss/index.scss -o assets/css/style.css && cross-env JEKYLL_ENV=production bundle exec jekyll build",
-    "postinstall": "bundle install"
+    "postinstall": "cd src && bundle install",
+    "dev": "concurrently --kill-others --pad-prefix --prefix-colors red.bold,blue.bold --names Jekyll,Tailwind \"cd src && cross-env JEKYLL_ENV=development bundle exec jekyll serve --livereload\" \"npm run build:styles -- --watch\"",
+    "dev:noreload": "concurrently --kill-others --pad-prefix --prefix-colors red.bold,blue.bold --names Jekyll,Tailwind \"cd src && cross-env JEKYLL_ENV=development bundle exec jekyll serve\" \"npm run build:styles -- --watch\"",
+    "build": "npm run build:styles && cd src && cross-env JEKYLL_ENV=development bundle exec jekyll build",
+    "build:production": "npm run build:styles && cd src && cross-env JEKYLL_ENV=production bundle exec jekyll build && npm run zip",
+    "zip": "shx rm -rf dist && shx mkdir -p dist && cd src/_site && bestzip ../../dist/site.zip *",
+    "build:styles": "npx tailwindcss -i src/assets/scss/index.scss -o src/assets/css/style.css",
+    "clean": "shx rm -rf src/.jekyll-cache src/_site src/.jekyll-metadata node_modules dist",
+    "format": "prettier --write --ignore-unknown */**",
+    "format:check": "prettier --check --ignore-unknown */**",
+    "filenames": "node filenames.mjs"
   },
   "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "^1.6.2",
-    "concurrently": "^9.1.0",
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "bestzip": "^2.2.1",
+    "concurrently": "^9.1.2",
     "cross-env": "^7.0.3",
-    "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9",
+    "glob": "^11.0.2",
+    "prettier": "^3.3.2",
     "shx": "^0.3.4",
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "^3.4.4"
   }
 }

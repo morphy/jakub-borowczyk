@@ -1,6 +1,17 @@
-_site/
-.jekyll-cache/
-.jekyll-metadata
+# IDE
 .idea/
+
+# Jekyll
+
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Npm
 node_modules/
-css/style.css
+
+# Build
+_site
+dist/
+src/assets/css/style.css

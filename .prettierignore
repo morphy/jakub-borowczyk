@@ -1,12 +1,23 @@
-node_modules/
-
-package-lock.json
-Gemfile.lock
-
-**/*.jpg
-**/*.webp
-**/*.avif
-
-assets/css/style.css
-
+# IDE
 .idea/
+
+# Jekyll
+
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Npm
+node_modules/
+package-lock.json
+
+# Build
+_site
+dist/
+src/assets/css/style.css
+
+# Other
+
+src/assets/lib
+src/assets/search.json
