@@ -3,24 +3,31 @@ title: Opera
 order: 1
 ---
 
-- **Max Kohyt**
-  - Wyobraźcie sobie… piknik u Schopenhauerów / Artur Schopenhauer (prapremiera
-    światowa)
-- **Krzesimir Dębski**
-  - Hiob / Elihu (prapremiera światowa)
-- **Henry Purcell**
-  - Dydona i Eneasz (Z. 626) / Spirit
-  - Król Artur (Z. 628) / Cold Genius
-  - Królowa Wróżek (Z. 629); / Secrecy
-- **Wolfgang A. Mozart**
-  - Apollo i Hiacynt, K. 38 / Apollo
-  - Czarodziejski Flet, KV 620 / Dritter Knabe (Knabenalt)
-  - Mitridates, król Pontu, K. 87 (74a) / Farnace or Pharnaces — w przygotowaniu
-- **Gioacchino Rossini**
-  - Dziewica z jeziora / Malcolm — w przygotowaniu
-- **Benjamin Britten**
-  - Sen nocy letniej, Op. 64 / Oberon — w przygotowaniu
-- **Philip Glass**
-  - Akhnaten / Akhnaten — w przygotowaniu
-- **Stanisław Moniuszko**
-  - Loteria / Nieznajomy
+- **A. Bioni**
+  - Issipile jako Giasone
+- **B. Britten**
+  - Midsummer Night's Dream, Op. 64 jako Oberon \*
+- **K. Dębski**
+  - Hiob jako Elihu
+- **Ph. Glass**
+  - Akhnaten jako Ehnaton \*
+- **M. Kohyt**
+  - Wyobraźcie sobie… piknik u Schopenhauerów jako Arthur Schopenhauer
+- **Z. Krauze**
+  - Bona Sforza jako Crisostomo Colonna oraz Przedstawiciel Sejmu
+- **A. Maskats**
+  - Niebezpieczne związki jako kontratenor solo
+- **S. Moniuszko**
+  - Lottery jako Nieznajomy
+- **C. Monteverdi**
+  - Koronacja Poppei jako Otton
+- **W. A. Mozart**
+  - Apollo et Hyacinthus, K. 38 jako Apollo
+  - Die Zauberflöte, KV 620 jako Trzeci Chłopiec (Knabenalt)
+  - Mitridate, re di Ponto, K. 87 (74a) jako Farnace (Pharnaces) \*
+- **H. Purcell**
+  - Dido and Aeneas (Z. 626) jako Duch
+  - King Arthur, or The British Worthy (Z. 628) jako Cold Genius
+  - The Fairy Queen (Z. 629) jako Secrecy
+- **G. Rossini**
+  - La Donna del Lago jako Malcolm \*
