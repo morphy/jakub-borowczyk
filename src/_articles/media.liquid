@@ -1,0 +1,35 @@
+---
+title: Media
+order: 5
+
+videos:
+  - src: https://www.youtube.com/embed/RqU59m0QWms?si=Hd8TG2gCZ8SSxHES
+    title: Śpiewu śpiewu
+  - src: https://www.youtube.com/embed/yDC8U-ZKGsM?si=Art6z4PkqijxdlK9
+    title: Szanowny Marszałku, Wysoka Izbo
+  - src: https://www.youtube.com/embed/Sp_ZPBPKMWw?si=zaWDWFe2QD_0I2s-
+    title: Feldmarszałek Ignacy Jan Paderewski
+  - src: https://www.youtube.com/embed/t0nct7EWg6Q?si=Fkiz9cNV05L9AOV0
+    title: Blablabla
+  - src: https://www.youtube.com/embed/bkn41O_fpSM?si=YpZRV6axFZo9qXhe
+    title: Grzyby
+  - src: https://www.youtube.com/embed/n46P2-z3Mtw?si=o4_pO11PNM0g-X98
+    title: Lalala
+---
+{% for video in page.videos %}
+  <div>
+    <h4>{{ video.title }}</h4>
+
+    <iframe
+      width="100%"
+      height="315"
+      src="{{ video.src }}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+{% endfor %}
