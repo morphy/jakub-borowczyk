@@ -1,6 +1,11 @@
 .content {
   @apply text-base font-light text-white md:text-lg;
 
+  b,
+  strong {
+    font-weight: 700;
+  }
+
   /* Links */
 
   a {

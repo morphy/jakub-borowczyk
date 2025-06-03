@@ -3,8 +3,9 @@ description: Jakub Borowczyk · Kontratenor · Opera · Teatr
 
 baseurl: ""
 url: ""
-
 host: 0.0.0.0
+
+excerpt_separator: "<!-- more -->"
 
 plugins:
   - jekyll-seo-tag
