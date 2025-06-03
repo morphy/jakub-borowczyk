@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-order: 6
+order: 7
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod

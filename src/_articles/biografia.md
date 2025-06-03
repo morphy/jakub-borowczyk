@@ -22,8 +22,8 @@ muzyką minimalistyczną. W roku 2025 stypendysta Ministra Kultury i Dziedzictwa
 Narodowego.
 
 <div class="flex justify-center gap-10">
-    <img src="/assets/img/bio/bio-1.jpg" alt="" class="w-96 md:w-60">
-    <img src="/assets/img/bio/bio-6.jpg" alt="" class="hidden w-60 md:block">
+  {% picture content-image /assets/img/bio/bio-1.jpg --img alt="" --img class="w-96 md:w-60" %}
+  {% picture content-image /assets/img/bio/bio-6.jpg --img alt="" --img class="hidden w-60 md:block" %}
 </div>
 
 Już na pierwszym roku studiów licencjackich (2015) zadebiutował partią trzeciego
