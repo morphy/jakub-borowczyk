@@ -14,4 +14,5 @@ node_modules/
 # Build
 _site
 dist/
-src/assets/css/style.css
+src/assets/style.css
+src/assets/main.js
