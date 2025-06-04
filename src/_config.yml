@@ -17,7 +17,8 @@ jekyll-minifier:
 
 collections:
   - articles
-  - works
+  - repertuar
+  - galeria
 
 livereload_ignore:
   - .idea/*
@@ -30,4 +31,5 @@ exclude:
   - package-lock.json
   - tailwind.config.js
   - assets/scss/
+  - assets/js/
   - README.md
