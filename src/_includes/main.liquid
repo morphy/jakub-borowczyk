@@ -14,14 +14,14 @@
 
     {% for article in articles %}
       <article id="{{ article.slug }}">
-        <h2 class="mb-10 inline-block border-b-2 border-solid border-white pb-4 text-2xl font-semibold uppercase tracking-[0.4rem] text-white sm:text-3xl">
+        <h2 class="inline-block border-b-2 border-solid border-white pb-4 text-2xl font-semibold uppercase tracking-[0.4rem] text-white sm:text-3xl">
           {{ article.title }}
         </h2>
 
         {% if article.disableContentClass %}
           {{ article.content }}
         {% else %}
-          <div class="content">
+          <div class="content mt-10">
             {{ article.content }}
           </div>
         {% endif %}
