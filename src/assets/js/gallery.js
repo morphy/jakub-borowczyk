@@ -1,5 +1,5 @@
-const gallery = () => {
-  const galleries = Array.from(document.getElementsByClassName("lightgallery"));
+const gallery = (selector) => {
+  const galleries = document.querySelectorAll(selector);
 
   galleries.forEach((gallery) => {
     lightGallery(gallery, {

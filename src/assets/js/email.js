@@ -1,15 +1,16 @@
-const email = () => {
-  const emailElement = document.getElementById("email");
+const email = (selector, email) => {
+  const setEmail = () => {
+    const emailElement = document.querySelector(selector);
 
-  const email =
-    "aNmIFCrEdTWRIYuFaU3CJK6OeFXFNN6IdCGE9TmRLYmFJUvCcKmO9F3FYN3IpC5EaT0RBYnFbUWCFKpObFCF5NjIbC2E0T=";
+    emailElement.innerText = atob(
+      email
+        .split("")
+        .filter((char, index) => index % 2 === 0)
+        .join("")
+    );
+  };
 
-  emailElement.innerText = atob(
-    email
-      .split("")
-      .filter((char, index) => index % 2 === 0)
-      .join("")
-  );
+  window.setTimeout(setEmail, 1000);
 };
 
 export default email;
