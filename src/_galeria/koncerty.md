@@ -7,18 +7,22 @@ galleries:
     description: fot. Alina Żemojdzin
 
   - directory: /assets/img/galeria/koncerty/festiwal-kusiewicza
-    title: Festiwal im Jana Kusiewicza, Jarosław
-    description: fot. Maciej Antoniak
+    title: Festiwal Muzyczny im. Jana Kusiewicza w Jarosławiu
+    description:
+      Festiwal Muzyczny im. Jana Kusiewicza w Jarosławiu, koncert w ramach
+      wydarzenia, fot. M. Antoniak
 
-  - directory: /assets/img/galeria/koncerty/goetzia
-    title: Goetzia, Kraków
-    description: fot. Bogumił Krużel
+  - directory: /assets/img/galeria/koncerty/goetia
+    title: „Goetia.72. In umbra lucis”
+    description:
+      MNK Sukiennice, L. Auerbach, „Goetia.72. In umbra lucis” z zespołem Cracow
+      Singers, fot. B. Krużel
 
   - directory: /assets/img/galeria/koncerty/haendel
-    title: Pandemia
+    title: Koncert „Piękny Haendel”
     description:
-      Koncert „Piękny Haendel” pod batutą Jacka Kraszewskiego (†) – Filharmonia
-      Gorzowska (Gorzów Wielkopolski)
+      Filharmonia Gorzowska, koncert „Piękny Haendel” pod batutą J.
+      Kraszewskiego (†), materiały instytucji
 
   - directory: /assets/img/galeria/koncerty/kurpinski-kontra-rossini
     title: Kurpiński kontra Rossini

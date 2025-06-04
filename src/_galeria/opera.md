@@ -3,11 +3,16 @@ title: Opera / Balet
 order: 1
 galleries:
   - directory: /assets/img/galeria/opera/apollo-i-hiacynt
-    title: Apollo et Hyacinthus (KV 38)
-    description: fot. Tarakum Photography
+    title: „Apollo et Hyacinthus” KV 36
+    description:
+      Muzeum II Wojny Światowej w Gdańsku, W. A. Mozart, „Apollo et Hyacinthus”
+      KV 36 pod batutą P. Stanisławskiego, fot. Tarakum Photography
 
   - directory: /assets/img/galeria/opera/apollo-sopot
-    title: Filharmonia Sopot, Apollo
+    title: „Apollo et Hyacinthus” KV 36
+    description:
+      Filharmonia Sopot, W. A. Mozart, „Apollo et Hyacinthus” KV 36 pod batutą
+      P. Stanisławskiego, materiały własne
 
   - directory: /assets/img/galeria/opera/bona-sforza
     title: Opera Krakowska, Bona Sforza, Z. Krauze
@@ -39,7 +44,7 @@ galleries:
 
   - directory: /assets/img/galeria/opera/morze-opera
     title: Projekt operowy - Mor(ż)e Opera
-    description: fot. Krzysztof Mystkowski/ kfp / Opera Bałtycka w Gdańsku
+    description: fot. Krzysztof Mystkowski / kfp / Opera Bałtycka w Gdańsku
 
   - directory: /assets/img/galeria/opera/niebezpieczne-zwiazki
     title: Opera Nova, A. Maskats, Niebezpieczne związki

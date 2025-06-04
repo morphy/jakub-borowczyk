@@ -3,7 +3,8 @@ title: Performance
 order: 5
 gallery:
   directory: /assets/img/galeria/wyobrazcie-sobie
-  id: wyobrazcie-sobie
+  title: Opera Bałtycka
+  description:
+    Opera Bałtycka, M. Kohyt, „Wyobraźcie sobie… piknik u Schopenhauerów”, fot.
+    M. Zygmunt
 ---
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
