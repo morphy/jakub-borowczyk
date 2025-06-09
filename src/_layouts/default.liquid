@@ -18,13 +18,14 @@
 
     <video
       id="video"
-      class="fixed left-0 top-0 -z-50 size-full transform object-cover filter duration-500"
+      class="fixed left-0 top-0 -z-50 size-full transform object-cover filter duration-500 bg-black"
       muted
       loop
       autoplay
+      preload="none"
     >
       <source type="video/webm" src="{{ "/assets/video/video-vp9.webm" | relative_url }}">
-      <source type="video/mp4" src="{{ "/assets/video/video-h265.webm" | relative_url }}">
+      <source type="video/mp4" src="{{ "/assets/video/video-h265.mp4" | relative_url }}">
     </video>
   </body>
 </html>
