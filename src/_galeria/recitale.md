@@ -3,14 +3,14 @@ title: Recitale solowe
 order: 4
 galleries:
   - directory: /assets/img/galeria/recitale/cara-sposa
-    title: Portrety
-    description: fot. Anna Świeczkowska
+    title: Koncert „Cara Sposa”
+    description:
+      Festiwal „Ostatni dzień lata” w Gdyni, koncert „Cara Sposa”, fot. A.
+      Świeczkowska
 
   - directory: /assets/img/galeria/recitale/pstrag-i-inne
-    title: Pstrąg i inne pieśni
+    title: Koncert „Pstrąg i inne pieśni”
     description:
-      Muzeum Narodowe w Gdańsku, Pstrąg i inne pieśni, finisaż wystawy
+      Muzeum Narodowe w Gdańsku, koncert „Pstrąg i inne pieśni”, finisaż wystawy
       „Marzyciele epoki industrialnej”, fot. @morethanbreath
 ---
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

@@ -11,6 +11,10 @@ galleries:
   - directory: /assets/img/galeria/inne/archiwum-wlasne
     title: Archiwum własne
 
+  - directory: /assets/img/galeria/plakaty/portrety
+    title: Portrety
+    description: fot. Anna Świeczkowska
+
   - directory: /assets/img/galeria/inne/narodowe-czytanie
     title: Narodowe Czytanie 2022
     description:
@@ -26,5 +30,3 @@ galleries:
   - directory: /assets/img/galeria/inne/prasa
     title: Prasówka
 ---
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
