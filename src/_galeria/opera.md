@@ -19,14 +19,16 @@ galleries:
     description: Opera Krakowska, Z. Krauze, „Bona Sforza”, fot. Andrey Rafael
 
   - directory: /assets/img/galeria/opera/czarodziejski-flet
-    title: Czarodziejski Flet
-    description: fot. Paweł Matuszewski
-    TODO: ASK
+    title: W. A. Mozart, „Czarodziejski Flet”
+    description:
+      Centrum św. Jana w Gdańsku, W. A. Mozart, „Czarodziejski Flet” pod batutą
+      S. Janiak, fot. P. Matuszewski
 
   - directory: /assets/img/galeria/opera/dydona-i-eneasz
-    title: Dydona i Eneasz
-    description: fot. Aleksander Szpakowicz
-    TODO: ASK
+    title: H. Purcell „Dydona i Eneasz”
+    description:
+      Akademia Muzyczna im. Stanisława Moniuszki w Gdańsku, H. Purcell „Dydona i
+      Eneasz” pod batutą P. Stanisławskiego, fot. Aleksander Szpakowicz
 
   - directory: /assets/img/galeria/opera/hiob
     title: K. Dębski, „Hiob”
