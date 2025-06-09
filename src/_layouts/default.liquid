@@ -17,12 +17,14 @@
     </div>
 
     <video
-      src="{{ "/assets/video/video.mp4" | relative_url }}"
       id="video"
       class="fixed left-0 top-0 -z-50 size-full transform object-cover filter duration-500"
       muted
       loop
       autoplay
-    ></video>
+    >
+      <source type="video/webm" src="{{ "/assets/video/video-vp9.webm" | relative_url }}">
+      <source type="video/mp4" src="{{ "/assets/video/video-h265.webm" | relative_url }}">
+    </video>
   </body>
 </html>
