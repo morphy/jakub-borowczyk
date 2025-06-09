@@ -5,11 +5,11 @@ order: 1
 
 [https://pl.wikipedia.org/wiki/Jakub_Borowczyk](https://pl.wikipedia.org/wiki/Jakub_Borowczyk)
 
-Jakub Borowczyk (ur. 1989) – polski śpiewak operowy, kontratenor. W 2019 roku
-ukończył Akademię Muzyczną w Gdańsku (dyplom z wyróżnieniem w klasie śpiewu
-prof. Piotra Kusiewicza). Kształcił się również pod kierunkiem takich pedagogów
-śpiewu jak: Kai Wessel, prof. Piotr Łykowski, dr Marek Rzepka czy Ewa Podleś. W
-latach 1997–2013 członek chóru chłopięcego i męskiego Filharmonii Poznańskiej
+Jakub Borowczyk – polski śpiewak operowy, kontratenor. W 2019 roku ukończył
+Akademię Muzyczną w Gdańsku (dyplom z wyróżnieniem w klasie śpiewu prof. Piotra
+Kusiewicza). Kształcił się również pod kierunkiem takich pedagogów śpiewu jak:
+Kai Wessel, prof. Piotr Łykowski, dr Marek Rzepka czy Ewa Podleś. W latach
+1997–2013 członek chóru chłopięcego i męskiego Filharmonii Poznańskiej
 „Poznańskie Słowiki” w głosie altowym – uczestnik wielu tournée międzynarodowych
 i polskich pod batutą Stefana Stuligrosza. Jest także muzykologiem – w 2011 roku
 zdobył tytuł licencjata na Uniwersytecie Adama Mickiewicza w Poznaniu. Zdobywca
