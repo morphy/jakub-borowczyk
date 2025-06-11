@@ -9,8 +9,9 @@
     "build:js": "rollup -i src/assets/js/index.js -o src/assets/main.js",
     "dev": "concurrently --kill-others --pad-prefix --prefix-colors red.bold,blue.bold,yellow.bold --names Jekyll,Tailwind,Rollup \"cd src && cross-env JEKYLL_ENV=development bundle exec jekyll serve\" \"npm run build:css -- --watch\" \"npm run build:js -- --watch\"",
     "zip": "shx rm -rf dist && shx mkdir -p dist && cd src/_site && bestzip ../../dist/site.zip *",
+    "extractor": "shx cp u.php dist/u.php",
     "build": "npm run build:js && npm run build:css && cd src && cross-env JEKYLL_ENV=development bundle exec jekyll build",
-    "build:production": "npm run build:js && npm run build:css && cd src && cross-env JEKYLL_ENV=production bundle exec jekyll build && npm run zip"
+    "build:production": "npm run build:js && npm run build:css && cd src && cross-env JEKYLL_ENV=production bundle exec jekyll build && npm run zip && npm run extractor"
   },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.5.0",
