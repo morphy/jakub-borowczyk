@@ -1,13 +1,11 @@
 import email from "./email";
 import nav from "./nav";
 import gallery from "./gallery";
-import works from "./works";
 import tab from "./tab";
 
 window.addEventListener("load", () => {
   if (document.readyState === "complete") {
     nav();
-    works();
 
     email(
       "#email",
