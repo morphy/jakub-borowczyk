@@ -10,44 +10,81 @@ const nav = () => {
   const closeButton = document.getElementById("close");
 
   const articles = Array.from(document.querySelectorAll("article[id]"));
-
   const buttons = Array.from(document.querySelectorAll("button[data-article]"));
 
-  /* Fade in header and footer */
+  const intro = () => {
+    /* Fade in header and footer */
 
-  window.setTimeout(() => {
-    header.classList.remove("opacity-0");
-    footer.classList.remove("opacity-0");
-  }, 200);
+    window.setTimeout(() => {
+      header.classList.remove("opacity-0");
+      footer.classList.remove("opacity-0");
+    }, 200);
 
-  /* Uncollapse header */
+    /* Uncollapse header */
 
-  window.setTimeout(() => {
-    inner.classList.remove("collapsed");
-  }, 400);
+    window.setTimeout(() => {
+      inner.classList.remove("collapsed");
+    }, 400);
 
-  /* Fade in video */
+    /* Fade in video */
 
-  window.setTimeout(() => {
-    wrapper.classList.add("bg-opacity-50");
-  }, 1000);
+    window.setTimeout(() => {
+      wrapper.classList.add("bg-opacity-50");
+    }, 1000);
+  };
 
-  const hideArticles = () => {
-    /* Hide main */
+  const showNav = () => {
+    header.classList.remove("hidden");
+    footer.classList.remove("hidden");
 
+    window.setTimeout(() => {
+      header.classList.remove("opacity-0");
+      footer.classList.remove("opacity-0");
+
+      video.classList.remove("scale-110", "blur-lg");
+    }, 20);
+  };
+
+  const hideNav = () => {
+    header.classList.add("opacity-0");
+    footer.classList.add("opacity-0");
+    video.classList.add("scale-110", "blur-lg");
+
+    window.setTimeout(() => {
+      header.classList.add("hidden");
+      footer.classList.add("hidden");
+    }, 500);
+  };
+
+  const hideArticles = (pushState = true) => {
     main.classList.add("opacity-0");
 
     window.setTimeout(() => {
-      main.classList.add("h-0", "invisible");
+      main.classList.add("hidden");
+      articles.forEach((article) => article.classList.add("hidden"));
 
-      /* Show header and footer */
+      showNav();
+    }, 500);
 
-      header.classList.remove("opacity-0", "h-0", "invisible");
-      footer.classList.remove("opacity-0", "h-0", "invisible");
+    if (pushState) {
+      window.history.pushState({ activeArticle: null }, null, "");
+    }
+  };
 
-      /* Unblur and unscale video */
+  const showArticle = (articleId) => {
+    wrapper.addEventListener("click", hideArticles, { once: true });
 
-      video.classList.remove("scale-110", "blur-lg");
+    hideNav();
+
+    const article = document.getElementById(articleId);
+
+    window.setTimeout(() => {
+      main.classList.remove("hidden");
+      article.classList.remove("hidden");
+
+      window.setTimeout(() => {
+        main.classList.remove("opacity-0");
+      }, 20);
     }, 500);
   };
 
@@ -55,45 +92,30 @@ const nav = () => {
     button.addEventListener("click", (event) => {
       event.stopPropagation();
 
-      /* Hide all articles */
+      const articleId = event.target.dataset.article;
 
-      articles.forEach((article) => {
-        article.classList.add("hidden");
-      });
-
-      /* Show selected article */
-
-      document
-        .getElementById(event.target.dataset.article)
-        .classList.remove("hidden");
-
-      /* Blur and scale video */
-
-      video.classList.add("scale-110", "blur-lg");
-
-      /* Hide header and footer */
-
-      header.classList.add("opacity-0");
-      footer.classList.add("opacity-0");
-
-      window.setTimeout(() => {
-        header.classList.add("h-0", "invisible");
-        footer.classList.add("h-0", "invisible");
-
-        /* Show main */
-
-        main.classList.remove("opacity-0", "h-0", "invisible");
-      }, 500);
-
-      wrapper.addEventListener("click", hideArticles, { once: true });
-      closeButton.addEventListener("click", hideArticles, { once: true });
+      showArticle(articleId);
+      window.history.pushState({ activeArticle: articleId }, null, "");
     });
   });
 
-  /* Prevent clicks on main from closing the popup */
-
   main.addEventListener("click", (event) => {
     event.stopPropagation();
+  });
+
+  closeButton.addEventListener("click", hideArticles);
+
+  intro();
+
+  window.history.replaceState({ activeArticle: null }, null, "");
+
+  window.addEventListener("popstate", (event) => {
+    if (event.state.activeArticle) {
+      showArticle(event.state.activeArticle);
+      return;
+    }
+
+    hideArticles(false);
   });
 };
 
